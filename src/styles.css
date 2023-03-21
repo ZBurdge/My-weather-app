@@ -75,3 +75,10 @@ ul {
 .sat {
   border: none;
 }
+footer {
+  font-family: "Raleway", sans-serif;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
