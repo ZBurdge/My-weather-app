@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="background-wrap">
+      <img src="image/arizona.jpg" alt="az-pic" class="az-picture" />
+      <div class="container">
+        <form id="city-search">
+          <input
+            type="text"
+            placeholder=" search city..."
+            autocomplete="off"
+            id="searchBox"
+          />
+          <input type="submit" value="🔍" class="search-btn" />
+        </form>
+        <header>
+          <button id="location-btn">Current Location</button>
+        </header>
+        <h1 id="city"></h1>
+        <h2 class="currentWeather">
+          <section id="date-time">Date/Time</section>
+          <br />
+          <section id="current-temp">🌤️ 71°F</section>
+        </h2>
+        <h3 class="weatherInfo">
+          <ul>
+            <li id="description"></li>
+            <li id="humidity"></li>
+            <li id="wind"></li>
+          </ul>
+        </h3>
+        <p class="forcast-heading">5 Day Forcast</p>
+        <div class="row forcast">
+          <div class="col">
+            Tues
+            <br />
+            ☀️
+            <br />
+            74°/44°
+          </div>
+          <div class="col">
+            Wed
+            <br />
+            🌤️
+            <br />
+            77°/46°
+          </div>
+          <div class="col">
+            Thur
+            <br />
+            🌤️
+            <br />
+            78°/49°
+          </div>
+          <div class="col">
+            Fri
+            <br />
+            🌤️
+            <br />
+            82°/59°
+          </div>
+          <div class="col sat">
+            Sat
+            <br />
+            🌤️
+            <br />
+            84°/57°
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
