@@ -1,0 +1,77 @@
+.background-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.az-picture {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+.container {
+  position: relative;
+}
+#searchBox {
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.search-btn {
+  border-radius: 15px;
+}
+#location-btn {
+  background: burlywood;
+  border-radius: 15px;
+  transition: all 200ms ease-in;
+}
+#location-btn:hover {
+  background: black;
+  color: burlywood;
+}
+#city {
+  text-align: right;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.currentWeather {
+  color: #191a19;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  position: relative;
+  top: 30px;
+}
+.weatherInfo {
+  text-align: right;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 50px;
+}
+ul {
+  list-style-type: none;
+}
+#description {
+  text-transform: capitalize;
+}
+.forcast-heading {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+.forcast {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  margin-top: 15px;
+  padding-top: 0 auto;
+}
+.col {
+  border-right: 1px solid black;
+}
+.sat {
+  border: none;
+}
