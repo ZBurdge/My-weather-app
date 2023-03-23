@@ -2,10 +2,10 @@ body {
   background: #5f939a;
 }
 .container {
-  position: relative;
+  max-width: 800px;
   background: #d8ac9c;
   padding: 10px 30px;
-  margin: 0 auto;
+  margin: 30px auto;
   border: 2px solid black;
   border-radius: 8px;
 }
