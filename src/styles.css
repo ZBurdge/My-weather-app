@@ -1,8 +1,12 @@
 body {
   background: #5f939a;
 }
-.container {
-  max-width: 800px;
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  max-width: 600px;
   background: #d8ac9c;
   padding: 10px 30px;
   margin: 30px auto;
@@ -37,7 +41,7 @@ body {
 .currentWeather {
   color: #191a19;
   font-family: "Oswald", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   position: relative;
   top: 30px;
 }
@@ -57,12 +61,12 @@ ul {
 .forcast-heading {
   text-align: center;
   font-family: "Oswald", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 .forcast {
   text-align: center;
   font-family: "Oswald", sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 15px;
   padding-top: 0 auto;
 }
@@ -73,7 +77,6 @@ ul {
   border: none;
 }
 footer {
-  text-align: center;
   font-family: "Raleway", sans-serif;
 }
 a {

@@ -23,80 +23,84 @@
   <body>
     <div>
       <div class="container">
-        <form id="city-search">
-          <input
-            type="text"
-            placeholder=" search city..."
-            autocomplete="off"
-            id="searchBox"
-          />
-          <input type="submit" value="🔍" class="search-btn" />
-        </form>
-        <header>
-          <button id="location-btn">Current Location</button>
-        </header>
-        <h1 id="city"></h1>
-        <h2 class="currentWeather">
-          <section id="date-time">Date/Time</section>
-          <section id="current-temp">🌤️ 71°F</section>
-        </h2>
-        <h3 class="weatherInfo">
-          <ul>
-            <li id="description"></li>
-            <li id="humidity"></li>
-            <li id="wind"></li>
-          </ul>
-        </h3>
-        <p class="forcast-heading">5 Day Forcast</p>
-        <hr />
-        <div class="row forcast">
-          <div class="col">
-            Tues
-            <br />
-            ☀️
-            <br />
-            74°/44°
+        <div class="weather-app-wrapper">
+          <div class="weather-app">
+            <form id="city-search">
+              <input
+                type="text"
+                placeholder=" search city..."
+                autocomplete="off"
+                id="searchBox"
+              />
+              <input type="submit" value="🔍" class="search-btn" />
+            </form>
+            <header>
+              <button id="location-btn">Current Location</button>
+            </header>
+            <h1 id="city"></h1>
+            <h2 class="currentWeather">
+              <section id="date-time">Date/Time</section>
+              <section id="current-temp">🌤️ 71°F</section>
+            </h2>
+            <h3 class="weatherInfo">
+              <ul>
+                <li id="description"></li>
+                <li id="humidity"></li>
+                <li id="wind"></li>
+              </ul>
+            </h3>
+            <p class="forcast-heading">5 Day Forcast</p>
+            <hr />
+            <div class="row forcast">
+              <div class="col">
+                Tues
+                <br />
+                ☀️
+                <br />
+                74°/44°
+              </div>
+              <div class="col">
+                Wed
+                <br />
+                🌤️
+                <br />
+                77°/46°
+              </div>
+              <div class="col">
+                Thur
+                <br />
+                🌤️
+                <br />
+                78°/49°
+              </div>
+              <div class="col">
+                Fri
+                <br />
+                🌤️
+                <br />
+                82°/59°
+              </div>
+              <div class="col sat">
+                Sat
+                <br />
+                🌤️
+                <br />
+                84°/57°
+              </div>
+            </div>
           </div>
-          <div class="col">
-            Wed
-            <br />
-            🌤️
-            <br />
-            77°/46°
-          </div>
-          <div class="col">
-            Thur
-            <br />
-            🌤️
-            <br />
-            78°/49°
-          </div>
-          <div class="col">
-            Fri
-            <br />
-            🌤️
-            <br />
-            82°/59°
-          </div>
-          <div class="col sat">
-            Sat
-            <br />
-            🌤️
-            <br />
-            84°/57°
-          </div>
+          <footer>
+            <a
+              href="https://github.com/ZBurdge/My-weather-app.git"
+              alt="github-link"
+              target="_blank"
+            >
+              Open-source code
+            </a>
+            , by Zgene' Burdge
+          </footer>
         </div>
       </div>
-      <footer>
-        <a
-          href="https://github.com/ZBurdge/My-weather-app.git"
-          alt="github-link"
-          target="_blank"
-        >
-          Open-source code
-        </a>
-        , by Zgene' Burdge
-      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
