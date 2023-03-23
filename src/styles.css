@@ -9,8 +9,7 @@ body {
   max-width: 600px;
   background: #d8ac9c;
   padding: 10px 30px;
-  margin: 30px auto;
-  margin-bottom: 0;
+
   border: 2px solid black;
   border-radius: 8px;
 }
