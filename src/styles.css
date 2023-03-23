@@ -1,16 +1,13 @@
-.background-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.az-picture {
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-  opacity: 50%;
+body {
+  background: #5f939a;
 }
 .container {
   position: relative;
+  background: #d8ac9c;
+  padding: 10px 30px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 8px;
 }
 #searchBox {
   margin-bottom: 10px;
@@ -21,13 +18,13 @@
   border-radius: 15px;
 }
 #location-btn {
-  background: burlywood;
+  background: #eac8af;
   border-radius: 15px;
   transition: all 200ms ease-in;
 }
 #location-btn:hover {
-  background: black;
-  color: burlywood;
+  background: #5f939a;
+  color: #eac8af;
 }
 #city {
   text-align: right;
@@ -74,11 +71,4 @@ ul {
 }
 .sat {
   border: none;
-}
-footer {
-  font-family: "Raleway", sans-serif;
-}
-a {
-  font-weight: bold;
-  text-decoration: none;
 }
