@@ -23,7 +23,6 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 function showCurrentTemp(response) {
-  console.log(response);
   let city = document.querySelector("h1");
   city.innerHTML = response.data.name;
 
