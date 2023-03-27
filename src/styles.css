@@ -21,12 +21,12 @@ body {
 .search-btn {
   border-radius: 15px;
 }
-#location-btn {
+#currentLocation-btn {
   background: #eac8af;
   border-radius: 15px;
   transition: all 200ms ease-in;
 }
-#location-btn:hover {
+#currnetLocation-btn:hover {
   background: #5f939a;
   color: #eac8af;
 }
