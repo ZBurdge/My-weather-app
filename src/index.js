@@ -23,6 +23,7 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 function showCurrentTemp(response) {
+  console.log(response);
   let city = document.querySelector("h1");
   city.innerHTML = response.data.name;
 
@@ -40,6 +41,12 @@ function showCurrentTemp(response) {
 
   let currentdate = document.querySelector("#date-time");
   currentdate.innerHTML = formatDate(response.data.dt * 1000);
+
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchInput(event) {
