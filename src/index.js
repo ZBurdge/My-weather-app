@@ -1,5 +1,4 @@
 function showCurrentTemp(response) {
-  console.log(response);
   let tempature = Math.round(response.data.main.temp);
   let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = `${tempature}°F`;
@@ -58,7 +57,6 @@ function formatDate(timestamp) {
 }
 
 function showLocationTemp(response) {
-  console.log(response);
   let city = response.data.name;
   let currentCity = document.querySelector("h1");
   currentCity.innerHTML = `${city}`;
@@ -84,7 +82,6 @@ function showLocationTemp(response) {
 }
 
 function showPosition(position) {
-  console.log(position);
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let units = "imperial";
