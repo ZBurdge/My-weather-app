@@ -1,36 +1,3 @@
-function showCurrentTemp(response) {
-  let tempature = Math.round(response.data.main.temp);
-  let currentTemp = document.querySelector("#current-temp");
-  currentTemp.innerHTML = `${tempature}°F`;
-
-  let humidity = response.data.main.humidity;
-  let currentHumidity = document.querySelector("#humidity");
-  currentHumidity.innerHTML = `Humidity: ${humidity}%`;
-
-  let wind = Math.round(response.data.wind.speed);
-  let currentWind = document.querySelector("#wind");
-  currentWind.innerHTML = `Wind: ${wind}mph`;
-
-  let description = response.data.weather[0].description;
-  let currentDescription = document.querySelector("#description");
-  currentDescription.innerHTML = `${description}`;
-}
-
-function searchInput(event) {
-  event.preventDefault();
-  let cityInput = document.querySelector("#searchBox");
-  let cityName = document.querySelector("h1");
-  cityName.innerHTML = `${cityInput.value}`;
-  let apiKey = "9d256541562f8d22893f524e36f1e610";
-  let apiUrl = "https://api.openweathermap.org/data/2.5/weather?";
-  let units = "imperial";
-  axios
-    .get(`${apiUrl}q=${cityInput.value}&appid=${apiKey}&units=${units}`)
-    .then(showCurrentTemp);
-}
-let citySearch = document.querySelector("#city-search");
-citySearch.addEventListener("submit", searchInput);
-
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let days = [
@@ -55,8 +22,7 @@ function formatDate(timestamp) {
   }
   return `${day} ${hours}:${minutes}`;
 }
-
-function showLocationTemp(response) {
+function showCurrentTemp(response) {
   let city = response.data.name;
   let currentCity = document.querySelector("h1");
   currentCity.innerHTML = `${city}`;
@@ -81,6 +47,21 @@ function showLocationTemp(response) {
   currentdate.innerHTML = formatDate(response.data.dt * 1000);
 }
 
+function searchInput(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#searchBox");
+  let cityName = document.querySelector("h1");
+  cityName.innerHTML = `${cityInput.value}`;
+  let apiKey = "9d256541562f8d22893f524e36f1e610";
+  let apiUrl = "https://api.openweathermap.org/data/2.5/weather?";
+  let units = "imperial";
+  axios
+    .get(`${apiUrl}q=${cityInput.value}&appid=${apiKey}&units=${units}`)
+    .then(showCurrentTemp);
+}
+let citySearch = document.querySelector("#city-search");
+citySearch.addEventListener("submit", searchInput);
+
 function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
@@ -89,7 +70,7 @@ function showPosition(position) {
   let apiUrl = "https://api.openweathermap.org/data/2.5/weather?";
   axios
     .get(`${apiUrl}lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`)
-    .then(showLocationTemp);
+    .then(showCurrentTemp);
 }
 navigator.geolocation.getCurrentPosition(showPosition);
 
