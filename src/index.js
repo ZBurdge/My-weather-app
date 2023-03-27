@@ -23,25 +23,20 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 function showCurrentTemp(response) {
-  let city = response.data.name;
-  let currentCity = document.querySelector("h1");
-  currentCity.innerHTML = `${city}`;
+  let city = document.querySelector("h1");
+  city.innerHTML = response.data.name;
 
-  let tempature = Math.round(response.data.main.temp);
-  let currentTemp = document.querySelector("#current-temp");
-  currentTemp.innerHTML = `${tempature}°F`;
+  let tempature = document.querySelector("#current-temp");
+  tempature.innerHTML = Math.round(response.data.main.temp);
 
-  let humidity = response.data.main.humidity;
-  let currentHumidity = document.querySelector("#humidity");
-  currentHumidity.innerHTML = `Humidity: ${humidity}%`;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
 
-  let wind = Math.round(response.data.wind.speed);
-  let currentWind = document.querySelector("#wind");
-  currentWind.innerHTML = `Wind: ${wind}mph`;
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.wind.speed);
 
-  let description = response.data.weather[0].description;
-  let currentDescription = document.querySelector("#description");
-  currentDescription.innerHTML = `${description}`;
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.weather[0].description;
 
   let currentdate = document.querySelector("#date-time");
   currentdate.innerHTML = formatDate(response.data.dt * 1000);
