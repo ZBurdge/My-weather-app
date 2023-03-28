@@ -84,12 +84,12 @@ ul {
 #description {
   text-transform: capitalize;
 }
-.forcast-heading {
+.forecast-heading {
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 25px;
 }
-.forcast {
+.forecast {
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
