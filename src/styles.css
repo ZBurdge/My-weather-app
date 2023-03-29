@@ -6,10 +6,8 @@ body {
   margin: 30px auto;
 }
 .weather-app {
-  max-width: 600px;
   background: #d8ac9c;
   padding: 10px 30px;
-
   border: 2px solid black;
   border-radius: 8px;
 }
@@ -96,7 +94,6 @@ ul {
   margin-top: 15px;
   padding-top: 0 auto;
 }
-
 .sat {
   border: none;
 }
